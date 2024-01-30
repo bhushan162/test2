@@ -15,7 +15,7 @@ pipeline {
                 withSonarQubeEnv('SonarQube') {
                     // Assuming you're using a tool like SonarCSS for analyzing CSS code
                     // Adjust the command to run the static analysis tool for CSS
-                    sh 'sonar-scanner.bat -D"sonar.projectKey=test_project" -D"sonar.sources=C:\Program Files\Jenkins\workspace\." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_a04dd056f5277a2227ab4979e06d68b02aa630ae"'sonar.projectBaseDir=C:\Program Files\Jenkins\workspace\
+                    sh 'sonar-scanner.bat -D"sonar.projectKey=test_project" -D"sonar.sources=C:/Program Files/Jenkins/workspace/." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_a04dd056f5277a2227ab4979e06d68b02aa630ae"'sonar.projectBaseDir=C:/Program Files/Jenkins/workspace/
                 }
             }
         }
